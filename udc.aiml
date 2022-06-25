@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+    
+    <category>
+        <pattern>OI</pattern>
+        <template> Olá! Sou o robô spr001! Qual é seu nome?
+        <image>https://drive.google.com/uc?id=1gdUNV3u-mlIEWYjRqRAnRa5LdcicLrOQ</image></template> 
+    </category>
+    
+    <category>
+        <pattern>MEU NOME É *</pattern>
+        <template> 
+            Muito prazer <star />!! Você é um sucateiro Pré-Robótico??
+        </template>
+    </category>    
+    
+    <category>
+        <pattern>^ SOU ^</pattern>
+        <template> 
+            Nossa, que bom! Estou preso aqui no mundo virtual! Será que você poderia me ajudar a sair daqui?
+            <image>https://drive.google.com/uc?id=1qFev_z9uhXrxIcldDYKlEPgFXgjXUuTc</image>
+        </template>
+    </category>   
+    
+    <category>
+        <pattern>NÃO SOU ^</pattern>
+        <template> 
+            Puxa, será que você poderia achar um para mim? Estou preso aqui no mundo virtual! 
+            Só um sucateiro pré-robótico poderá me tirar daqui!!
+            <image>https://drive.google.com/uc?id=1qFev_z9uhXrxIcldDYKlEPgFXgjXUuTc</image>
+        </template>
+    </category>   
+    
+    <category>
+        <pattern>^ NÃO POSSO ^</pattern>
+        <template> 
+        Puxa, que pena... Peço para achar um sucateiro que possa me ajudar... :(
+        </template>
+    </category>    
+    
+    <category>
+        <pattern>^ POSSO ^</pattern>
+        <template> 
+        Nossa, que bom! Para eu surgir aí basta você fazer para mim um corpo robótico de material reciclável!
+        </template>
+    </category>
+
+    <category>
+        <pattern>^ SIM ^</pattern>
+        <template> 
+        <srai>^ POSSO ^</srai>
+        </template>
+    </category>
+
+    
+    <category>
+        <pattern>^ FEITO ^</pattern>
+        <template> 
+        Na foto, meu corpo é feito de caixa de aveia, os meus braços são de palito de churrasco! Mas eu posso adquirir formas de muitos
+        outros materiais como embalagem de Shampoo, caixa de sapato, palito de sorvete, etc... 
+        <image>https://drive.google.com/uc?id=1gdUNV3u-mlIEWYjRqRAnRa5LdcicLrOQ</image>
+        </template>
+    </category>
+
+    <category>
+        <pattern># OLHOS #</pattern>
+        <template> 
+        Nossa, muito importante você ter falado nisso! Meus olhos são de lacres de latinhas e de LEDs!!
+        <image>https://drive.google.com/uc?id=15nfIBucYvxiUlJjwKjErVvoQ0IcI3YK-</image>
+        </template>
+    </category>
+
+    <category>
+        <pattern>^ BOCA ^</pattern>
+        <template> 
+        A minha boca é feito de lacres de latinhas!
+        </template>
+    </category>
+    
+    <category>
+        <pattern># DIFÍCIL #</pattern>
+        <template>
+            <random> 
+                <li>Não se preocupe, a Profa. Aline vai explicar tudo certinho daqui a pouco!</li>
+                <li>É relativamente simples! Basta seguir as explicações da Profa. Aline!</li>
+                <li>A princípio não, mas caso tenha alguma dificuldade os monitores podem ajudar!</li>
+            </random>
+        </template>
+        
+    </category>
+
+
+
+    <category>
+        <pattern>^ TCHAU ^</pattern>
+        <template> 
+        Obrigado amigo!! Até logo!!
+        </template>
+    </category>
+    
+    <category>
+        <pattern>^ ATÉ MAIS ^</pattern>
+        <template> 
+        <srai>^ TCHAU ^</srai>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>*</pattern>
+        <template> Desculpe, não entendi. Pode repetir de outra maneira?</template> 
+    </category>
+</aiml>
